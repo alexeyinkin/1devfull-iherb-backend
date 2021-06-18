@@ -1,0 +1,13 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "conditions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {"fieldPath": "keywords", "arrayConfig": "CONTAINS"},
+        {"fieldPath": "score", "order": "DESCENDING"}
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
