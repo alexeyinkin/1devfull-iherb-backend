@@ -5,7 +5,7 @@ from predict import get_trained_model
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
-def hello_world():
+def serve():
     json = request.get_json(force=True)
     features = json['features']
     substances = json['substances']

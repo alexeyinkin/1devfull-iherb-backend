@@ -4,7 +4,6 @@ import numpy as np
 from model import get_model
 from constants import feature_count, substance_count
 
-#def get_fit_model(filename: str):
 def get_fit_model(filename):
     model = get_model()
     names = []
@@ -27,9 +26,8 @@ def get_fit_model(filename):
     return model
 
 
-#def fit_and_dump(data_filename: str, weights_filename: str):
 def fit_and_dump(data_filename, weights_filename):
     model = get_fit_model(data_filename)
     model.save_weights(weights_filename)
 
-fit_and_dump('random.tsv', 'weights.ckpt')
+fit_and_dump('data.tsv', 'weights.ckpt')

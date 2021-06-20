@@ -4,9 +4,9 @@ import argparse
 
 from constants import feature_count, substance_count
 
-parser = argparse.ArgumentParser(description='Generates substance safety random data.')
-parser.add_argument('--tsv', metavar='FILE', type=str, help='Path to write.')
-parser.add_argument('--count', metavar='N', type=int, help='Line count.')
+parser = argparse.ArgumentParser(description='Генерирует случайные данные в качестве входных для обучения.')
+parser.add_argument('--tsv', metavar='FILE', type=str, help='Путь для записи.')
+parser.add_argument('--count', metavar='N', type=int, help='Количество.')
 
 args = parser.parse_args()
 

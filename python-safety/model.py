@@ -1,12 +1,12 @@
 import tensorflow as tf
 from constants import feature_count, substance_count
 
-#feature_count = 2
-#substance_count = 3
-
 input_count = feature_count + substance_count
 
 def get_model():
+    # Создаём нейронную сеть из трёх слоёв.
+    # TODO: Определить количество нейронов в промежуточном слое после получения реальных данных
+    #       и замера эффективности обучения.
     model = tf.keras.models.Sequential([
         tf.keras.layers.Dense(input_count),
         tf.keras.layers.Dense(input_count * 2, activation='relu'),
