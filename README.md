@@ -72,7 +72,7 @@ firebase deploy --only firestore:indexes
 
 Запуск:
 ```bash
-python3 conditions-to-json.py --tsv FILE [--limit N] > conditions.json
+python3 conditions-to-json.py --tsv mkb10.csv [--limit N] > conditions.json
 ```
 
 На выходе программа выдаёт JSON, который можно загрузить в Firebase многими инсрументами.
